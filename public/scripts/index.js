@@ -1,3 +1,16 @@
+async function checkToken() {
+  const response = await fetch("/token/check");
+
+  const headLocation = response.headers.get("Location");
+
+  if (!headLocation) {
+    location.href = "/dashboard";
+    return;
+  }
+}
+
+await checkToken();
+
 const form = document.querySelector("form");
 
 form.addEventListener("submit", async (event) => {
