@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <title>Inicio | Questly</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <script defer type="module" src="/scripts/index.js"></script>
+  </head>
+  <body>
+    <form action="/auth/access" method="post">
+      <img src="/images/logo.png" alt="logo Questly" />
+      <input
+        type="text"
+        name="email"
+        id="email"
+        required
+        placeholder="Correo electrónico"
+      />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        placeholder="Contraseña"
+      />
+      <button
+        type="submit"
+        aria-label="acceder a la cuenta para manejar el dashboard y nuevas encuentas"
+      >
+        Acceder
+      </button>
+    </form>
+  </body>
+</html>

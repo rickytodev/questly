@@ -1,0 +1,21 @@
+{
+  "name": "questly",
+  "module": "main.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/dotenv": "8.2.3",
+    "@types/express": "5.0.3"
+  },
+  "scripts": {
+    "dev": "bun main.ts"
+  },
+  "peerDependencies": {
+    "typescript": "5"
+  },
+  "dependencies": {
+    "dotenv": "17.0.1",
+    "express": "5.1.0"
+  }
+}
