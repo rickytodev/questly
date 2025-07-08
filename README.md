@@ -1,13 +1,11 @@
-<p align="center">
-  <img src="/.github/questly.png" alt="Questly Logo" width="200" />
-</p>
+![Logo](/.github/questly.png)
 
 Es una página para generar encuentas de manera local y rápida, sin necesidad de conexión a internet. Ideal para eventos, reuniones o cualquier situación donde necesites recopilar opiniones o datos de manera eficiente.
 
 > [!warning]
 > Esta aplicación es un proyecto personal por lo que queda **prohibido** su uso comercial. Si deseas utilizarla con fines comerciales, por favor contacta conmigo a través de [mi correo](mailto:support@rickytodev.xyz).
 
-## Como usarlo
+## ⚙️ Como usarlo
 
 ### 1. Instalación
 
@@ -40,3 +38,43 @@ Es una página para generar encuentas de manera local y rápida, sin necesidad d
   ```bash
   New-Item -Path .env
   ```
+
+### 3. Ejecutar el servidor
+
+- Inicia el servidor de desarrollo con el siguiente comando:
+
+  ```bash
+  pnpm dev
+  ```
+
+  o
+
+  ```bash
+  bun dev
+  ```
+
+## 🧪 Pruebas
+
+Primero debes de ejecuar el servidor de desarrollo:
+
+```bash
+pnpm dev
+```
+
+o
+
+```bash
+bun dev
+```
+
+Luego, puedes ejecutar las pruebas con el siguiente comando:
+
+```bash
+pnpm test
+```
+
+o
+
+```bash
+bun test
+```
