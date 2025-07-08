@@ -7,8 +7,6 @@ async function checkToken() {
 
   const headLocation = response.headers.get("Location");
 
-  console.log(response.status);
-
   if (headLocation) {
     location.href = headLocation;
     return;
