@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/public/images/logo.png" alt="Questly Logo" width="200" />
+  <img src="/.github/questly.png" alt="Questly Logo" width="200" />
 </p>
 
 Es una página para generar encuentas de manera local y rápida, sin necesidad de conexión a internet. Ideal para eventos, reuniones o cualquier situación donde necesites recopilar opiniones o datos de manera eficiente.
