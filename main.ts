@@ -47,7 +47,11 @@ app.post("/auth/access", (req, res) => {
     .header({
       Location: "/dashboard",
     })
-    .send({ token, email });
+    .send({
+      token,
+      email: configServer.auth.email,
+      name: configServer.auth.name,
+    });
 });
 
 app.get("/token/check", (req, res) => {

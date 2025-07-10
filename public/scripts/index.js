@@ -32,6 +32,7 @@ form.addEventListener("submit", async (event) => {
     if (headLocation) {
       const cookie = `token=${data.token}; path=/`;
       localStorage.setItem("email", data.email);
+      localStorage.setItem("name", data.name);
       document.cookie = cookie;
       location.href = headLocation;
     }
