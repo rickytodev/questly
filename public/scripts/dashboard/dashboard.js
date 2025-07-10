@@ -1,6 +1,12 @@
+import Aside from "./aside.js";
+
 const body = document.querySelector("body");
 
-body.style.display = "none";
+Aside();
+
+const accountEmail = document.getElementById("account-email");
+
+accountEmail.textContent = localStorage.getItem("email") || "No email found";
 
 async function checkToken() {
   const response = await fetch("/token/check");
@@ -12,7 +18,7 @@ async function checkToken() {
     return;
   }
 
-  body.style.display = "block";
+  body.style.display = "flex";
 }
 
 await checkToken();

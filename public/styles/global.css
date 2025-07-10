@@ -20,6 +20,16 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
+a,
+button {
+  outline: none;
+  user-select: none;
+}
+
 h1,
 h2,
 h3,

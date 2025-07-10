@@ -40,14 +40,14 @@ app.post("/auth/access", (req, res) => {
   const token = crypto.randomUUID().replaceAll("-", "");
   tokenAccount = token;
 
-  Console({ name: "✅ Acceso Concedido", value: `Token: ${token}` });
+  Console({ name: "✅ Acceso Concedido", value: `Token ${token}` });
 
   res
     .status(200)
     .header({
       Location: "/dashboard",
     })
-    .send({ token });
+    .send({ token, email });
 });
 
 app.get("/token/check", (req, res) => {
@@ -81,6 +81,12 @@ app.get("/token/check", (req, res) => {
     .status(401)
     .header({ Location: "/" })
     .send({ error: "Token no encontrado" });
+});
+
+app.get("/auth/logout", (_, res) => {
+  tokenAccount = "";
+  Console({ name: "🔒 Token Eliminado", value: "Token de cuenta eliminado" });
+  res.status(200).redirect("/");
 });
 
 app.listen(configServer.port, () =>

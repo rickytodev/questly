@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <script defer type="module" src="/scripts/dashboard.js"></script>
+    <link rel="stylesheet" href="/styles/dashboard.css" />
+    <script defer type="module" src="/scripts/dashboard/dashboard.js"></script>
     <title>Dashboard | Questly</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
       rel="stylesheet"
     />
-    <script defer src="/scripts/google.icons.js"></script>
   </head>
   <body>
     <aside>
-      <google-icon>home</google-icon>
-      <google-icon>search</google-icon>
+      <img src="/images/logo.avif" alt="logo" />
+      <ol class="aside-list"></ol>
+      <ol class="account-list">
+        <li>
+          <span class="material-symbols-rounded">account_circle</span>
+          <article>
+            <h2>Administrador</h2>
+            <p id="account-email"></p>
+          </article>
+        </li>
+        <li>
+          <a href="/auth/logout">
+            <span class="material-symbols-rounded">logout</span>
+            Cerrar sesión
+          </a>
+        </li>
+      </ol>
     </aside>
     <main></main>
   </body>
