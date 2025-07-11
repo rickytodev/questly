@@ -12,30 +12,35 @@ const data = [
         icon: "forum",
         id: "ques",
       },
-      {
-        label: "Analítica",
-        icon: "area_chart",
-        id: "analytics",
-      },
+    ],
+  },
+  {
+    section: "Datos",
+    children: [
       {
         label: "Base de datos",
         icon: "database",
         id: "database",
       },
+      {
+        label: "Papelera",
+        icon: "delete",
+        id: "trash",
+      },
     ],
   },
   {
-    section: "Ayuda",
+    section: "Configuración",
     children: [
       {
-        label: "Soporte",
-        icon: "support_agent",
-        id: "support",
+        label: "Copias de seguridad",
+        icon: "backup",
+        id: "backup",
       },
       {
-        label: "Correo",
-        icon: "mail",
-        id: "mail",
+        label: "Cuenta",
+        icon: "account_circle",
+        id: "account",
       },
     ],
   },

@@ -1,8 +1,9 @@
 import express from "express";
-import configServer from "./config";
+import configServer from "./system/config";
 import path from "node:path";
 import dotenv from "dotenv";
-import Console from "./commands/terminal";
+import Console from "./system/terminal";
+import DatabaseSystem from "./system/databases";
 
 dotenv.config();
 
@@ -12,6 +13,8 @@ const dirname = import.meta.dirname;
 
 app.use(express.static(path.join(dirname, "public")));
 app.use(express.json());
+
+DatabaseSystem.createTables();
 
 app.get("/", (_, res) => {
   res.sendFile(path.join(dirname, "src", "pages", "index.html"));

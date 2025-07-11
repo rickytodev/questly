@@ -1,0 +1,21 @@
+[
+  {
+    "table": "ques",
+    "columns": [
+      { "column": "id", "type": "text", "null": false },
+      { "column": "title", "type": "text", "null": false },
+      { "column": "description", "type": "text", "null": true },
+      { "column": "created", "type": "text", "null": false },
+      { "column": "port", "type": "integer", "null": false },
+      { "column": "status", "type": "text", "null": false }
+    ]
+  },
+  {
+    "table": "trash",
+    "columns": [
+      { "column": "id", "type": "text", "null": false },
+      { "column": "title", "type": "text", "null": false },
+      { "column": "created", "type": "text", "null": false }
+    ]
+  }
+]
