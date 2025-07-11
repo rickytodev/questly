@@ -33,11 +33,6 @@ const data = [
     section: "Configuración",
     children: [
       {
-        label: "Copias de seguridad",
-        icon: "backup",
-        id: "backup",
-      },
-      {
         label: "Cuenta",
         icon: "account_circle",
         id: "account",
