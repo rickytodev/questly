@@ -1,9 +1,9 @@
 import express from "express";
-import configServer from "./system/config";
+import configServer from "~/system/config";
 import path from "node:path";
 import dotenv from "dotenv";
-import Console from "./system/terminal";
-import DatabaseSystem from "./system/databases";
+import Console from "~/system/terminal";
+import DatabaseSystem from "~/system/databases";
 
 dotenv.config();
 

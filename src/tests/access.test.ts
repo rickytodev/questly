@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import configServer from "../../system/config";
+import configServer from "~/system/config";
 
 type Props = {
   email: string;
